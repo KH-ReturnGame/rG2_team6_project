@@ -5,11 +5,11 @@ public class PlayerMovemnt : MonoBehaviour
 {
     Rigidbody2D rb;
     SpriteRenderer spriteRenderer;
-    // 이동
+    [Header("이동")]
     public float speed = 10f;
 
-    //점프
-    public float jumpForce = 5f;
+    [Header("점프")]
+    public float jumpForce = 10f;
     public bool isOnGround;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
