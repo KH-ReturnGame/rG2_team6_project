@@ -18,7 +18,7 @@ public class Button_Script: MonoBehaviour
     public void game_start()
     {
         Debug.Log("Start_to_game");
-        SceneManager.LoadScene("Stage1_Scenes");
+        SceneManager.LoadScene("Stage1_Scenes"); 
     }
 
     public void game_end()
