@@ -1,9 +1,33 @@
 fileFormatVersion: 2
-guid: 198c5cf9dad20144995fd44cf395c218
+guid: c45a357028c8c2341837b9d372a8c190
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -8126706027523564625
+    second: Decor_0
+  - first:
+      213: -7701600710164591835
+    second: Decor_1
+  - first:
+      213: 6518737276950443075
+    second: Decor_2
+  - first:
+      213: -5490112108248013230
+    second: Decor_3
+  - first:
+      213: -8502563662169142480
+    second: Decor_4
+  - first:
+      213: -2976628631366175011
+    second: Decor_5
+  - first:
+      213: -3785966335139398167
+    second: Decor_6
+  - first:
+      213: 4279685826142473886
+    second: Decor_7
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +44,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -33,7 +58,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -47,7 +72,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 8
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -63,20 +88,23 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
   platformSettings:
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -86,30 +114,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Server
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -119,19 +124,20 @@ TextureImporter:
       name: Decor_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 72
-        width: 16
-        height: 16
+        x: 10
+        y: 71
+        width: 12
+        height: 18
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: e6d7775a57b91b441abd5239cb316d5b
-      internalID: 352713682
+      spriteID: fab9e63dce3283f80800000000000000
+      internalID: -8126706027523564625
       vertices: []
       indices: 
       edges: []
@@ -141,18 +147,19 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 72
+        y: 71
         width: 16
-        height: 16
+        height: 13
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 597811a518bc90041beb2b84a5b6ce55
-      internalID: -1723509321
+      spriteID: 52b4ebc75fa6e1590800000000000000
+      internalID: -7701600710164591835
       vertices: []
       indices: 
       edges: []
@@ -161,19 +168,20 @@ TextureImporter:
       name: Decor_2
       rect:
         serializedVersion: 2
-        x: 56
-        y: 72
-        width: 16
-        height: 16
+        x: 55
+        y: 71
+        width: 17
+        height: 13
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 396628f209f742e40801570b35fb08d4
-      internalID: -1244265684
+      spriteID: 3447ab00405377a50800000000000000
+      internalID: 6518737276950443075
       vertices: []
       indices: 
       edges: []
@@ -182,19 +190,20 @@ TextureImporter:
       name: Decor_3
       rect:
         serializedVersion: 2
-        x: 80
-        y: 72
-        width: 8
-        height: 6
+        x: 79
+        y: 71
+        width: 26
+        height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 5c1e457d6c3436e478be672fedc7e403
-      internalID: -554979022
+      spriteID: 2566eca10243fc3b0800000000000000
+      internalID: -5490112108248013230
       vertices: []
       indices: 
       edges: []
@@ -203,19 +212,20 @@ TextureImporter:
       name: Decor_4
       rect:
         serializedVersion: 2
-        x: 96
-        y: 72
-        width: 8
-        height: 8
+        x: 1
+        y: 7
+        width: 29
+        height: 53
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 04912b4ce54ac2146ab82ddaea03b819
-      internalID: -1784656370
+      spriteID: 03b8344d563d00a80800000000000000
+      internalID: -8502563662169142480
       vertices: []
       indices: 
       edges: []
@@ -224,19 +234,20 @@ TextureImporter:
       name: Decor_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 8
-        width: 32
-        height: 56
+        x: 34
+        y: 7
+        width: 37
+        height: 50
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 9418cb0f7673b6748a5954e67234ef1a
-      internalID: -1067534915
+      spriteID: dd67927d704e0b6d0800000000000000
+      internalID: -2976628631366175011
       vertices: []
       indices: 
       edges: []
@@ -245,19 +256,20 @@ TextureImporter:
       name: Decor_6
       rect:
         serializedVersion: 2
-        x: 32
-        y: 8
-        width: 40
-        height: 48
+        x: 79
+        y: 31
+        width: 17
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 916ee6706f2830b49887376604fc8b96
-      internalID: 325617990
+      spriteID: 9edbd665dab857bc0800000000000000
+      internalID: -3785966335139398167
       vertices: []
       indices: 
       edges: []
@@ -266,74 +278,40 @@ TextureImporter:
       name: Decor_7
       rect:
         serializedVersion: 2
-        x: 80
-        y: 32
-        width: 16
-        height: 16
+        x: 79
+        y: 7
+        width: 26
+        height: 15
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 0c0097fbcd87d3149b24a24a73b2e1ca
-      internalID: 625698662
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Decor_8
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 8
-        width: 24
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 06540ad7ef60757449395142ecd7b034
-      internalID: -607116252
+      spriteID: e9e0f79859f746b30800000000000000
+      internalID: 4279685826142473886
       vertices: []
       indices: 
       edges: []
       weights: []
     outline: []
+    customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Decor_7: 625698662
-      Decor_3: -554979022
-      Decor_0: 352713682
-      Decor_2: -1244265684
-      Decor_8: -607116252
-      Decor_5: -1067534915
-      Decor_1: -1723509321
-      Decor_6: 325617990
-      Decor_4: -1784656370
-  spritePackingTag: 
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 248158
-  packageName: Platformer Tileset - Pixelart Grasslands
-  packageVersion: 1.0
-  assetPath: Assets/BigManJD/Platformer Tileset - Pixelart Grasslands/Sprites/Textures/Decor/Decor.png
-  uploadId: 577368

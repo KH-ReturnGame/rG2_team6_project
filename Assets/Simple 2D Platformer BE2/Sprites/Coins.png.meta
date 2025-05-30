@@ -1,49 +1,50 @@
 fileFormatVersion: 2
-guid: 975084b78f3930d4e8fcbf55aadd72db
+guid: 274d64617113287499ed1c4165d1d8f3
+AssetOrigin:
+  serializedVersion: 1
+  productId: 188518
+  packageName: Simple 2D Platformer Assets Pack
+  packageVersion: 1.0
+  assetPath: Assets/Simple 2D Platformer BE2/Sprites/Coins.png
+  uploadId: 417220
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2146325261911611826
-    second: CharacterSheet_0
+      213: -2322180950842035098
+    second: Bronze 0
   - first:
-      213: 4967684757281315799
-    second: CharacterSheet_1
+      213: -4893972260818282012
+    second: Bronze 1
   - first:
-      213: 4457059312207414977
-    second: CharacterSheet_2
+      213: -6323751108524238166
+    second: Bronze 2
   - first:
-      213: 7287619372497824471
-    second: CharacterSheet_3
+      213: 2722280177590742205
+    second: Bronze 3
   - first:
-      213: 4492797595560981109
-    second: CharacterSheet_4
+      213: 6582046967323461550
+    second: Silver 0
   - first:
-      213: -7205907187406109100
-    second: CharacterSheet_5
+      213: 1942777921290549423
+    second: Silver 1
   - first:
-      213: -279133644238819022
-    second: CharacterSheet_6
+      213: 8793606821965667882
+    second: Silver 2
   - first:
-      213: 1568812427291028391
-    second: CharacterSheet_7
+      213: 3444832735345940322
+    second: Silver 3
   - first:
-      213: 8578870837536603425
-    second: CharacterSheet_8
+      213: -4986890610287934012
+    second: Gold 0
   - first:
-      213: -8492410670495441705
-    second: CharacterSheet_9
+      213: 6143208460787649835
+    second: Gold 1
   - first:
-      213: 4048138136090361788
-    second: CharacterSheet_10
+      213: 7609282858266732271
+    second: Gold 2
   - first:
-      213: -2313408394707340494
-    second: CharacterSheet_11
-  - first:
-      213: -6628499320254548675
-    second: CharacterSheet_12
-  - first:
-      213: -8991613776338098132
-    second: CharacterSheet_13
+      213: -6288512792030432889
+    second: Gold 3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -76,12 +77,12 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -90,7 +91,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -107,14 +108,14 @@ TextureImporter:
   ignorePngGamma: 0
   applyGammaDecoding: 0
   swizzle: 50462976
-  cookieLightType: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 128
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -124,10 +125,36 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 128
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 128
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 128
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -139,309 +166,265 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CharacterSheet_0
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 159
-        width: 14
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2b950b8347749cd10800000000000000
-      internalID: 2146325261911611826
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CharacterSheet_1
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 127
-        width: 13
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7db10e187f2c0f440800000000000000
-      internalID: 4967684757281315799
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CharacterSheet_2
-      rect:
-        serializedVersion: 2
-        x: 19
-        y: 127
-        width: 12
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1c648f674d7aadd30800000000000000
-      internalID: 4457059312207414977
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CharacterSheet_3
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 127
-        width: 15
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7daecf33533d22560800000000000000
-      internalID: 7287619372497824471
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CharacterSheet_4
-      rect:
-        serializedVersion: 2
-        x: 50
-        y: 127
-        width: 13
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 572342bfb9f995e30800000000000000
-      internalID: 4492797595560981109
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CharacterSheet_5
+      name: Bronze 0
       rect:
         serializedVersion: 2
         x: 0
-        y: 95
-        width: 15
-        height: 20
+        y: 34
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 456893277997ffb90800000000000000
-      internalID: -7205907187406109100
+      spriteID: 664b1e88ab4f5cfd0800000000000000
+      internalID: -2322180950842035098
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CharacterSheet_6
+      name: Bronze 1
       rect:
         serializedVersion: 2
         x: 17
-        y: 95
-        width: 15
-        height: 18
+        y: 34
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 231f842fd61502cf0800000000000000
-      internalID: -279133644238819022
+      spriteID: 4e99f4d782e151cb0800000000000000
+      internalID: -4893972260818282012
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CharacterSheet_7
+      name: Bronze 2
       rect:
         serializedVersion: 2
-        x: 1
-        y: 63
-        width: 14
-        height: 19
+        x: 34
+        y: 34
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7ab66e7379a85c510800000000000000
-      internalID: 1568812427291028391
+      spriteID: aaa1e681fd58d38a0800000000000000
+      internalID: -6323751108524238166
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CharacterSheet_8
+      name: Bronze 3
       rect:
         serializedVersion: 2
-        x: 2
-        y: 31
-        width: 13
-        height: 19
+        x: 51
+        y: 34
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 12db35de2954e0770800000000000000
-      internalID: 8578870837536603425
+      spriteID: dbc2264f56b77c520800000000000000
+      internalID: 2722280177590742205
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CharacterSheet_9
+      name: Silver 0
       rect:
         serializedVersion: 2
-        x: 19
-        y: 31
-        width: 12
-        height: 18
+        x: 0
+        y: 17
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7dcd16a6d75e42a80800000000000000
-      internalID: -8492410670495441705
+      spriteID: ea78046f7d0285b50800000000000000
+      internalID: 6582046967323461550
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CharacterSheet_10
+      name: Silver 1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 31
-        width: 15
-        height: 19
+        x: 17
+        y: 17
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: cbfb063df20ed2830800000000000000
-      internalID: 4048138136090361788
+      spriteID: fa8bef3e93226fa10800000000000000
+      internalID: 1942777921290549423
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CharacterSheet_11
+      name: Silver 2
       rect:
         serializedVersion: 2
-        x: 50
-        y: 31
-        width: 13
-        height: 18
+        x: 34
+        y: 17
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 233ff0d625f15efd0800000000000000
-      internalID: -2313408394707340494
+      spriteID: a2e17b560da290a70800000000000000
+      internalID: 8793606821965667882
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CharacterSheet_12
+      name: Silver 3
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 17
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2679eec0f118ecf20800000000000000
+      internalID: 3444832735345940322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gold 0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 15
-        height: 19
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d353f4eccf6d204a0800000000000000
-      internalID: -6628499320254548675
+      spriteID: 4c58e0069610bcab0800000000000000
+      internalID: -4986890610287934012
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CharacterSheet_13
+      name: Gold 1
       rect:
         serializedVersion: 2
         x: 17
         y: 0
-        width: 15
-        height: 17
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c28ebd7f8ee573380800000000000000
-      internalID: -8991613776338098132
+      spriteID: b2d0c660c8f014550800000000000000
+      internalID: 6143208460787649835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gold 2
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe62572a17a999960800000000000000
+      internalID: 7609282858266732271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gold 3
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 781b6810fe6bab8a0800000000000000
+      internalID: -6288512792030432889
       vertices: []
       indices: 
       edges: []
@@ -450,7 +433,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 7e6a3458aea67d6468fc14ee8c46abba
     internalID: 0
     vertices: []
     indices: 
@@ -459,7 +442,19 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Bronze 0: -2322180950842035098
+      Bronze 1: -4893972260818282012
+      Bronze 2: -6323751108524238166
+      Bronze 3: 2722280177590742205
+      Gold 0: -4986890610287934012
+      Gold 1: 6143208460787649835
+      Gold 2: 7609282858266732271
+      Gold 3: -6288512792030432889
+      Silver 0: 6582046967323461550
+      Silver 1: 1942777921290549423
+      Silver 2: 8793606821965667882
+      Silver 3: 3444832735345940322
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

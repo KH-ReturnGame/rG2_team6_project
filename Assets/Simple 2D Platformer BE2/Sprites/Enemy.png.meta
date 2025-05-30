@@ -1,37 +1,38 @@
 fileFormatVersion: 2
-guid: 4b0ebc9f2eb4c8446a4ad0a741fa1aae
+guid: 5d4daff38e3d9174b873918abcf2c1d4
+AssetOrigin:
+  serializedVersion: 1
+  productId: 188518
+  packageName: Simple 2D Platformer Assets Pack
+  packageVersion: 1.0
+  assetPath: Assets/Simple 2D Platformer BE2/Sprites/Enemy.png
+  uploadId: 417220
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2294252757955751954
-    second: Decor2_0
+      213: 8596640243658272642
+    second: Idle 0
   - first:
-      213: -2096892985531439907
-    second: Decor2_1
+      213: -7642239419928554605
+    second: Idle 1
   - first:
-      213: -418167939083137789
-    second: Decor2_2
+      213: -3876759189950653258
+    second: Idle 2
   - first:
-      213: -964185116787606052
-    second: Decor2_3
+      213: -5720429097031363069
+    second: Idle 3
   - first:
-      213: -1878837941509690850
-    second: Decor2_4
+      213: -7911572535675539837
+    second: Run 0
   - first:
-      213: -8142082564354496639
-    second: Decor2_5
+      213: 5398807837072792716
+    second: Run 1
   - first:
-      213: 7102956996445526896
-    second: Decor2_6
+      213: -3763824636803078212
+    second: Run 2
   - first:
-      213: -788335497597714220
-    second: Decor2_7
-  - first:
-      213: 190919064919932037
-    second: Decor2_8
-  - first:
-      213: 8602965565670657295
-    second: Decor2_9
+      213: 8273598715916126338
+    second: Run 3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -64,12 +65,12 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -78,7 +79,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -95,14 +96,14 @@ TextureImporter:
   ignorePngGamma: 0
   applyGammaDecoding: 0
   swizzle: 50462976
-  cookieLightType: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 128
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -112,10 +113,36 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 128
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 128
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 128
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -127,221 +154,177 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Decor2_0
+      name: Idle 0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 71
-        width: 12
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 210b9e65ab2d6df10800000000000000
-      internalID: 2294252757955751954
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Decor2_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 71
+        x: 0
+        y: 17
         width: 16
-        height: 13
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: dd4e36180f656e2e0800000000000000
-      internalID: -2096892985531439907
+      spriteID: 28f241131c66d4770800000000000000
+      internalID: 8596640243658272642
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Decor2_2
+      name: Idle 1
       rect:
         serializedVersion: 2
-        x: 55
-        y: 71
-        width: 17
-        height: 13
+        x: 17
+        y: 17
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 30d0e76997e523af0800000000000000
-      internalID: -418167939083137789
+      spriteID: 393dba6ecbf41f590800000000000000
+      internalID: -7642239419928554605
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Decor2_3
-      rect:
-        serializedVersion: 2
-        x: 79
-        y: 71
-        width: 26
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cddf728aeb68e92f0800000000000000
-      internalID: -964185116787606052
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Decor2_4
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 13
-        width: 29
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e1ae9c1c8d60de5e0800000000000000
-      internalID: -1878837941509690850
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Decor2_5
+      name: Idle 2
       rect:
         serializedVersion: 2
         x: 34
-        y: 21
-        width: 37
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 187afbbdb03810f80800000000000000
-      internalID: -8142082564354496639
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Decor2_6
-      rect:
-        serializedVersion: 2
-        x: 79
-        y: 31
-        width: 17
+        y: 17
+        width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 07bd20451c5c29260800000000000000
-      internalID: 7102956996445526896
+      spriteID: 6bc92438e0cf23ac0800000000000000
+      internalID: -3876759189950653258
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Decor2_7
+      name: Idle 3
       rect:
         serializedVersion: 2
-        x: 113
-        y: 39
-        width: 14
-        height: 11
+        x: 51
+        y: 17
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4d08bddaa054f05f0800000000000000
-      internalID: -788335497597714220
+      spriteID: 30613ac5b04fc90b0800000000000000
+      internalID: -5720429097031363069
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Decor2_8
+      name: Run 0
       rect:
         serializedVersion: 2
-        x: 79
-        y: 7
-        width: 26
-        height: 15
+        x: 0
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 58cf665c0e746a200800000000000000
-      internalID: 190919064919932037
+      spriteID: 38ea25432b2743290800000000000000
+      internalID: -7911572535675539837
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Decor2_9
+      name: Run 1
       rect:
         serializedVersion: 2
-        x: 112
-        y: 7
-        width: 17
-        height: 20
+        x: 17
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f0d87bcf99fd36770800000000000000
-      internalID: 8602965565670657295
+      spriteID: c8c915baf1b6cea40800000000000000
+      internalID: 5398807837072792716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run 2
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb72d763f6534cbc0800000000000000
+      internalID: -3763824636803078212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run 3
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2880f4c523ab1d270800000000000000
+      internalID: 8273598715916126338
       vertices: []
       indices: 
       edges: []
@@ -350,7 +333,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -359,7 +342,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Idle 0: 8596640243658272642
+      Idle 1: -7642239419928554605
+      Idle 2: -3876759189950653258
+      Idle 3: -5720429097031363069
+      Run 0: -7911572535675539837
+      Run 1: 5398807837072792716
+      Run 2: -3763824636803078212
+      Run 3: 8273598715916126338
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
