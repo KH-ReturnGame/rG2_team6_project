@@ -21,13 +21,17 @@ public class EnemyDamaged : MonoBehaviour
     {
         if (other.CompareTag("PlayerAttack"))
         {
-            Damage();
+            Damage(1);
+        }
+        else if (other.CompareTag("PlayerBullet"))
+        {
+            Damage(2);
         }
     }
 
-    void Damage()
+    void Damage(int i)
     {
-        EnemyCurHP -= 1 * PlayerPrefs.GetInt("PlayerAttackRate");
+        EnemyCurHP -= i * PlayerPrefs.GetInt("PlayerAttackRate");
         if (EnemyCurHP <= 0)
         {
             StartCoroutine(Die());

@@ -9,6 +9,9 @@ public class PlayerAttack : MonoBehaviour
     Transform attackTransform;
 
     bool canAttack = true;
+    bool canShoot = true;
+    float SHOOTDelay = 2f;
+    public GameObject bulletPrefab;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -24,6 +27,11 @@ public class PlayerAttack : MonoBehaviour
         {
             StartCoroutine(Attack());
         }
+
+        if(Input.GetKeyDown(KeyCode.F) && canShoot)
+        {
+            StartCoroutine(ShotBullet());
+        }
     }
 
     IEnumerator Attack()
@@ -34,7 +42,7 @@ public class PlayerAttack : MonoBehaviour
         }
         else
         {
-            attackTransform.localPosition = new Vector3(1f, 0f, 0f);            
+            attackTransform.localPosition = new Vector3(1f, 0f, 0f);
         }
         attackCollider.SetActive(true);
 
@@ -46,6 +54,21 @@ public class PlayerAttack : MonoBehaviour
         yield return new WaitForSeconds(ATKDelay);
 
         canAttack = true;
+        yield return null;
+    }
+
+    IEnumerator ShotBullet()
+    {
+        canShoot = false;
+
+        GameObject instance = Instantiate(bulletPrefab, transform.position, Quaternion.Euler(0, 0, 90));
+        Bullet bullet = instance.GetComponent<Bullet>();
+        bullet.direction = playerMovement.spriteRenderer.flipX ? -1 : 1; 
+
+        yield return new WaitForSeconds(SHOOTDelay);
+
+        canShoot = true;
+
         yield return null;
     }
 }

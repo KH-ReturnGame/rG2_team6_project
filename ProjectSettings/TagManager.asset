@@ -8,6 +8,9 @@ TagManager:
   - platform
   - PlayerAttack
   - EnemyAttack
+  - Bullet
+  - PlayerBullet
+  - Enemy
   layers:
   - Default
   - TransparentFX
