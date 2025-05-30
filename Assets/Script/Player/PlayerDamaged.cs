@@ -9,10 +9,14 @@ public class PlayerDamaged : MonoBehaviour
     public int PlayerCurHP = 10;
     bool isGrace = false;
     public float graceTime = 1.5f;
+
+    [Header("플레이어 사망")]
+    public GameObject DieUI;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        Time.timeScale = 1;
     }
 
     // Update is called once per frame
@@ -25,16 +29,23 @@ public class PlayerDamaged : MonoBehaviour
     {
         if (other.CompareTag("thorn"))
         {
-            if(!isGrace)
+            if (!isGrace)
             {
-                StartCoroutine(Damage());
+                StartCoroutine(Damage(1));
+            }
+        }
+        if(other.CompareTag("EnemyAttack"))
+        {
+            if (!isGrace)
+            {
+                StartCoroutine(Damage(2));
             }
         }
     }
 
-    IEnumerator Damage()
+    IEnumerator Damage(int i)
     {
-        PlayerCurHP -= 1;
+        PlayerCurHP -= i;
         isGrace = true;
         spriteRenderer.color = new Color(1f, 1f, 1f, 0.5f);
         if (PlayerCurHP <= 0)
@@ -53,6 +64,7 @@ public class PlayerDamaged : MonoBehaviour
     void Die()
     {
         StopAllCoroutines();
-        Debug.Log("사망");
+        DieUI.SetActive(true);
+        Time.timeScale = 0;
     }
 }

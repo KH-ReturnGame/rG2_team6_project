@@ -4,7 +4,7 @@ using System.Collections;
 public class EnemyMovement : MonoBehaviour
 {
     Rigidbody2D rb;
-    SpriteRenderer spriteRenderer;
+    public SpriteRenderer spriteRenderer;
     public float speed = 3.5f;
     bool isFall = false;
     float TurnSeconds;
@@ -16,9 +16,10 @@ public class EnemyMovement : MonoBehaviour
     public RaycastHit2D hit;
     Vector3 groundCheckPosition;
 
-    [Header("플레이어 감지")]
+    [Header("플레이어 감지 및 공격")]
     public bool isDetected;
     Transform playerTransform;
+    EnemyAttack enemyAttack;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -28,26 +29,35 @@ public class EnemyMovement : MonoBehaviour
         groundCheckPosition = new Vector3(transform.position.x + 0.75f * direction, transform.position.y, 0);
         StartCoroutine(TrunEnemy());
         playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
+        enemyAttack = GetComponent<EnemyAttack>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (!isDetected)
+        if (!enemyAttack.canAttack)
         {
-            if (isFall)
+            if (!isDetected)
             {
-                direction *= -1;
-                isFall = false;
+                if (isFall)
+                {
+                    direction *= -1;
+                    isFall = false;
+                }
+                groundCheckPosition = new Vector3(transform.position.x + 0.75f * direction, transform.position.y, 0);
+                MoveEnemy();
+                CheckGround();
             }
-            groundCheckPosition = new Vector3(transform.position.x + 0.75f * direction, transform.position.y, 0);
-            MoveEnemy();
-            CheckGround();
+            else
+            {
+                StopAllCoroutines();
+                transform.position = Vector3.MoveTowards(transform.position, playerTransform.position, speed * Time.deltaTime);
+            }
         }
-        else
+
+        if (!enemyAttack.isAttacking)
         {
-            StopAllCoroutines();
-            transform.position = Vector3.MoveTowards(transform.position, playerTransform.position, speed * Time.deltaTime);
+            PlayerDistanceCheck();   
         }
     }
 
@@ -85,6 +95,30 @@ public class EnemyMovement : MonoBehaviour
         if (hit.collider == null)
         {
             isFall = true;
+        }
+    }
+
+    void PlayerDistanceCheck()
+    {
+        if (Vector2.Distance(transform.position, playerTransform.position) < 3f)
+        {
+            enemyAttack.canAttack = true;
+        }
+        else
+        {
+            enemyAttack.canAttack = false;
+        }
+
+        if (isDetected)
+        {
+            if (playerTransform.position.x > transform.position.x)
+            {
+                spriteRenderer.flipX = false;
+            }
+            else if (playerTransform.position.x < transform.position.x)
+            {
+                spriteRenderer.flipX = true;
+            }
         }
     }
 }

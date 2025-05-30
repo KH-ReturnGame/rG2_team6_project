@@ -4,7 +4,7 @@ using System.Collections;
 public class PlayerMovemnt : MonoBehaviour
 {
     Rigidbody2D rb;
-    SpriteRenderer spriteRenderer;
+    public SpriteRenderer spriteRenderer;
     [Header("이동")]
     public float speed = 10f;
 
@@ -45,7 +45,7 @@ public class PlayerMovemnt : MonoBehaviour
 
     void MovePlayer()
     {
-        float moveHorizontal = Input.GetAxis("Horizontal");
+        float moveHorizontal = Input.GetAxisRaw("Horizontal");
         Vector2 movement = rb.linearVelocity;
         movement.x = moveHorizontal * speed;
         rb.linearVelocity = movement;

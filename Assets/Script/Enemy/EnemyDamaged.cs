@@ -27,7 +27,7 @@ public class EnemyDamaged : MonoBehaviour
 
     void Damage()
     {
-        EnemyCurHP--;
+        EnemyCurHP -= 1 * PlayerPrefs.GetInt("PlayerAttackRate");
         if (EnemyCurHP <= 0)
         {
             StartCoroutine(Die());
@@ -38,6 +38,8 @@ public class EnemyDamaged : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         // 사망 애니메이션 재생
+        int randomGold = Random.Range(15, 55);
+        BankManager.PlusGold(randomGold);
 
         gameObject.SetActive(false);
 
