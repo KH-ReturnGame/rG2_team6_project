@@ -6736,6 +6736,7 @@ GameObject:
   - component: {fileID: 1130436853}
   - component: {fileID: 1130436852}
   - component: {fileID: 1130436851}
+  - component: {fileID: 1130436854}
   m_Layer: 0
   m_Name: CinemachineCamera
   m_TagString: Untagged
@@ -6832,6 +6833,26 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1130436854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1130436850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f453f694addf4275988fac205bc91968, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BoundingShape2D: {fileID: 1663324137}
+  Damping: 0.5
+  SlowingDistance: 5
+  OversizeWindow:
+    Enabled: 0
+    MaxWindowSize: 0
+    Padding: 0
+  m_LegacyMaxWindowSize: -2
 --- !u!1 &1386053289
 GameObject:
   m_ObjectHideFlags: 0
@@ -7058,7 +7079,7 @@ GameObject:
   - component: {fileID: 1663324138}
   - component: {fileID: 1663324137}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Camera Border
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7094,7 +7115,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
