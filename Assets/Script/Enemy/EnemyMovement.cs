@@ -52,12 +52,13 @@ public class EnemyMovement : MonoBehaviour
             {
                 StopAllCoroutines();
                 transform.position = Vector3.MoveTowards(transform.position, playerTransform.position, speed * Time.deltaTime);
+                FilpEnemy();
             }
         }
 
         if (!enemyAttack.isAttacking)
         {
-            PlayerDistanceCheck();   
+            PlayerDistanceCheck();
         }
     }
 
@@ -79,11 +80,16 @@ public class EnemyMovement : MonoBehaviour
         movement.x = direction * speed;
         rb.linearVelocity = movement;
 
-        if (direction > 0)
+        FilpEnemy();
+    }
+
+    void FilpEnemy()
+    {
+        if (rb.linearVelocity.x > 0)
         {
             spriteRenderer.flipX = false;
         }
-        else if (direction < 0)
+        else if (rb.linearVelocity.x < 0)
         {
             spriteRenderer.flipX = true;
         }

@@ -27,7 +27,7 @@ public class PlayerDamaged : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("thorn"))
+        if (other.CompareTag("thorn") || other.CompareTag("Bullet"))
         {
             if (!isGrace)
             {

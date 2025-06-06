@@ -61,9 +61,18 @@ public class PlayerAttack : MonoBehaviour
     {
         canShoot = false;
 
-        GameObject instance = Instantiate(bulletPrefab, transform.position, Quaternion.Euler(0, 0, 90));
+        GameObject instance = Instantiate(bulletPrefab, transform.position, Quaternion.Euler(0, 0, 0));
+
         Bullet bullet = instance.GetComponent<Bullet>();
-        bullet.direction = playerMovement.spriteRenderer.flipX ? -1 : 1; 
+        int x = playerMovement.spriteRenderer.flipX ? -1 : 1;
+        bullet.directionVec = new Vector2(x, 0);
+
+        if (x == -1)
+        {
+            SpriteRenderer sr = instance.GetComponent<SpriteRenderer>();
+            sr.flipX = true;    
+        }
+        
 
         yield return new WaitForSeconds(SHOOTDelay);
 

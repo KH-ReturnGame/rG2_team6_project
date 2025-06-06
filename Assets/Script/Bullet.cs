@@ -3,6 +3,8 @@ using System.Collections;
 
 public class Bullet : MonoBehaviour
 {
+    [HideInInspector]
+    public Vector2 directionVec;
     public int direction;
     Rigidbody2D rb;
     SpriteRenderer spriteRenderer;
@@ -12,21 +14,19 @@ public class Bullet : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        FlipSprite();
         StartCoroutine(DestroyBullet());
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        rb.linearVelocity = new Vector2(direction * speed, 0f);
+        rb.linearVelocity = directionVec * speed;
     }
 
     void Parry()
     {
         direction -= 1;
         gameObject.tag = "PlayerBullet";
-        FlipSprite();
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -51,17 +51,5 @@ public class Bullet : MonoBehaviour
     {
         yield return new WaitForSeconds(0.1f);
         Destroy(gameObject);
-    }
-
-    void FlipSprite()
-    {
-        if (direction < 0)
-        {
-            spriteRenderer.flipY = false;
-        }
-        else
-        {
-            spriteRenderer.flipY = true;
-        }
     }
 }
