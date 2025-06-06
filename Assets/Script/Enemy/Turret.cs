@@ -24,7 +24,7 @@ public class Turret : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("PlayerBullet"))
+        if (other.CompareTag("PlayerBullet") || other.CompareTag("PlayerAttack"))
         {
             StartCoroutine(Die());
         }
