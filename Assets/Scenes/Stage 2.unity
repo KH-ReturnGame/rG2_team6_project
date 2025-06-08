@@ -614,7 +614,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4951242342272750403, guid: 4b78c0c9474e10644807ab8b07105e04, type: 3}
       propertyPath: nextGo
-      value: Stage 2
+      value: End
       objectReference: {fileID: 0}
     - target: {fileID: 4951242342272750403, guid: 4b78c0c9474e10644807ab8b07105e04, type: 3}
       propertyPath: enemies.Array.size

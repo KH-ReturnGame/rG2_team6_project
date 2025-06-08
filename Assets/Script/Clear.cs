@@ -37,12 +37,15 @@ public class Clear : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            NextSceneGo(nextGo);
+            PlayerDamaged pd = other.gameObject.GetComponent<PlayerDamaged>();
+            NextSceneGo(nextGo, pd.PlayerCurHP);
         }
     }
 
-    void NextSceneGo(string i)
+    void NextSceneGo(string i, int j)
     {
+        PlayerPrefs.SetInt("PlayerHP", j);
+        Debug.Log(j);
         SceneManager.LoadScene(i);
     }
 

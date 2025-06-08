@@ -6,7 +6,7 @@ public class PlayerDamaged : MonoBehaviour
     [Header("플레이어 데미지")]
     SpriteRenderer spriteRenderer;
     public int PlayerMaxHP = 10;
-    public int PlayerCurHP = 10;
+    public int PlayerCurHP;
     bool isGrace = false;
     public float graceTime = 1.5f;
 
@@ -15,6 +15,7 @@ public class PlayerDamaged : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        PlayerCurHP = PlayerPrefs.GetInt("PlayerHP");
         spriteRenderer = GetComponent<SpriteRenderer>();
         Time.timeScale = 1;
     }
