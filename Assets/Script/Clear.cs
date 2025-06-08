@@ -6,6 +6,7 @@ public class Clear : MonoBehaviour
     SpriteRenderer spriteRenderer;
     BoxCollider2D boxCollider2D;
     public GameObject[] enemies;
+    public string nextGo;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -21,20 +22,28 @@ public class Clear : MonoBehaviour
 
     void CheckEnemy()
     {
-
+        for (int i = 0; i < enemies.Length; i++)
+        {
+            if (enemies[i] != null)
+            {
+                return;
+            }
+        }
+        spriteRenderer.enabled = true;
+        boxCollider2D.enabled = true;
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            NextSceneGo();
+            NextSceneGo(nextGo);
         }
     }
 
-    void NextSceneGo()
+    void NextSceneGo(string i)
     {
-
+        SceneManager.LoadScene(i);
     }
 
 }

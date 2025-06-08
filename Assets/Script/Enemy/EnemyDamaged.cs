@@ -45,9 +45,7 @@ public class EnemyDamaged : MonoBehaviour
         int randomGold = Random.Range(15, 55);
         BankManager.PlusGold(randomGold);
 
-        gameObject.SetActive(false);
-
-        yield return null;
+        Destroy(gameObject);
 
         StopAllCoroutines();
 
