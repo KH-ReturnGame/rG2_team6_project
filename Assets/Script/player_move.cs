@@ -7,6 +7,7 @@ public class player_move : MonoBehaviour
     SpriteRenderer spriteRenderer;
 
     private Rigidbody2D rigid;
+    private bool isGrounded = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
@@ -30,10 +31,28 @@ public class player_move : MonoBehaviour
 
     void Update()
     {
-        {//점프 기능
-            if (Input.GetButtonDown("Jump"))
+        {
+            //점프 기능
+            if (Input.GetButtonDown("Jump") && isGrounded)
+            {
                 rigid.AddForce(Vector2.up * jumppower, ForceMode2D.Impulse);
+                //isGrounded = false;
+            }
+        }
+    }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            isGrounded = true;
+        }
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            isGrounded = false;
         }
     }
 }
