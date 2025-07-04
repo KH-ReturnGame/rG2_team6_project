@@ -36,7 +36,6 @@ public class player_move : MonoBehaviour
             if (Input.GetButtonDown("Jump") && isGrounded)
             {
                 rigid.AddForce(Vector2.up * jumppower, ForceMode2D.Impulse);
-                //isGrounded = false;
             }
         }
     }
