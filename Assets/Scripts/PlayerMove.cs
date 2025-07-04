@@ -22,10 +22,10 @@ public class PlayerMove : MonoBehaviour
     void Update()
     {
         bool isGrounded = col.IsTouchingLayers(groundLayer);
-            Debug.Log("IsGrounded" + isGrounded);
+            //Debug.Log("IsGrounded" + isGrounded);
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
-            Debug.Log("스페이스바 누름");
+            //Debug.Log("스페이스바 누름");
             rb.AddForce(Vector2.up * JumpPower, ForceMode2D.Impulse);
             //플레이어 점프
         }
